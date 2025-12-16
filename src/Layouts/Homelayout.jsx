@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Components/Header";
 import Latestnews from "../Components/Latestnews";
+import Navbar from "../Components/Navbar";
 
 const Homelayout = () => {
   return (
@@ -12,6 +13,9 @@ const Homelayout = () => {
         <section className="w-11/12 mx-auto my-3">
           <Latestnews></Latestnews>
         </section>
+        <nav className="w-11/12 mx-auto my-3">
+          <Navbar></Navbar>
+        </nav>
       </header>
 
       <main>
