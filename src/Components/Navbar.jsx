@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="nav flex gap-2">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About </NavLink>
-        <NavLink to="/career"> Carrer</NavLink>
+        <NavLink to="/carrer"> Carrer</NavLink>
       </div>
       <div className="login-btn flex gap-2">
         <img src={user} alt=""></img>
