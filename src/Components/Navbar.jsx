@@ -4,8 +4,9 @@ import user from "../assets/user.png";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center">
-      <div className="nav flex gap-2">
+    <div className="flex    justify-between items-center">
+      <div></div>
+      <div className=" flex gap-2 text-accent">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About </NavLink>
         <NavLink to="/carrer"> Carrer</NavLink>
