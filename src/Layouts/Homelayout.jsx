@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import Header from "../Components/Header";
 import Latestnews from "../Components/Latestnews";
 import Navbar from "../Components/Navbar";
@@ -20,15 +20,15 @@ const Homelayout = () => {
         </nav>
       </header>
 
-      <main className="w-11/12 mx-auto my-3">
-        <aside>
+      <main className="w-11/12 mx-auto my-3 grid grid-cols-12  *:border">
+        <aside className="col-span-3">
           <LeftAside></LeftAside>
         </aside>
 
-        <section className="main">
+        <section className="main col-span-6">
           <Outlet> </Outlet>
         </section>
-        <aside>
+        <aside className="col-span-3">
           <RightAside></RightAside>
         </aside>
       </main>
